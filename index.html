@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/fffe8414d4.js"
       crossorigin="anonymous"
@@ -11,9 +19,7 @@
     <title>El diario universitario</title>
   </head>
   <body>
-    <!-- paletas de colores a utilizar -->
-    <!-- #12355B, #272727, #507DBC, #F4FFF8, #8BAAAD -->
-    <header>
+    <header class="header__principal">
       <a href="#" class="header__logo">El diario universitario</a>
       <nav>
         <ul class="nav__links">
@@ -22,7 +28,10 @@
           <li><a href="">Deportes</a></li>
           <li><a href="">Innovación</a></li>
           <li><a href="">Tendencias</a></li>
-          <input type="text" placeholder="Search.." />
+          <input type="text" placeholder="Buscar" />
+          <button class="lupa" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
         </ul>
       </nav>
     </header>
@@ -30,29 +39,76 @@
       <article class="articulo1">
         <img src="http://lorempixel.com/400/200" alt="imagen1" />
         <div class="articulo1__contenido">
-          <h1>articulo 1</h1>
-          <div class="estadisticas">
+          <h1 class="prueba articulo1__contenido__titulo">articulo 1</h1>
+          <div class="estadisticas prueba">
             <i class="far fa-eye"></i>
-            <h2>239</h2>
-            <i class="far fa-comment"></i>
-            <h2>5</h2>
-            <i class="far fa-heart"></i>
-            <h2>100</h2>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis quo, deserunt, quis doloribus consequuntur, incidunt ex
-              fugit adipisci cum distinctio commodi vero dolores suscipit saepe
-              unde! Quisquam repudiandae fugiat voluptate.
-            </h2>
-            <h3>Fecha aqui | autor | <span>categoria</span></h3>
+            <h2 class="numero">239</h2>
+            <i class="far fa-comment icono"></i>
+            <h2 class="numero">5</h2>
+            <i class="far fa-heart icono"></i>
+            <h2 class="numero">100</h2>
           </div>
+          <h2 class="descripcion prueba">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            quo, deserunt, quis doloribus consequuntur, incidunt ex fugit
+            adipisci cum distinctio commodi vero dolores suscipit saepe unde!
+            Quisquam repudiandae fugiat voluptate.
+          </h2>
+          <h3 class="prueba extra">
+            Fecha aqui | autor | <span class="extra">categoria</span>
+          </h3>
         </div>
-        <hr />
       </article>
-      <article class="articulo2">
+      <article class="articulo1">
+        <img src="http://lorempixel.com/400/200" alt="imagen1" />
+        <div class="articulo1__contenido">
+          <h1 class="prueba articulo1__contenido__titulo">articulo 1</h1>
+          <div class="estadisticas prueba">
+            <i class="far fa-eye"></i>
+            <h2 class="numero">239</h2>
+            <i class="far fa-comment icono"></i>
+            <h2 class="numero">5</h2>
+            <i class="far fa-heart icono"></i>
+            <h2 class="numero">100</h2>
+          </div>
+          <h2 class="descripcion prueba">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            quo, deserunt, quis doloribus consequuntur, incidunt ex fugit
+            adipisci cum distinctio commodi vero dolores suscipit saepe unde!
+            Quisquam repudiandae fugiat voluptate.
+          </h2>
+          <h3 class="prueba extra">
+            Fecha aqui | autor | <span class="extra">categoria</span>
+          </h3>
+        </div>
+      </article>
+      <article class="articulo1">
+        <img src="http://lorempixel.com/400/200" alt="imagen1" />
+        <div class="articulo1__contenido">
+          <h1 class="prueba articulo1__contenido__titulo">articulo 1</h1>
+          <div class="estadisticas prueba">
+            <i class="far fa-eye"></i>
+            <h2 class="numero">239</h2>
+            <i class="far fa-comment icono"></i>
+            <h2 class="numero">5</h2>
+            <i class="far fa-heart icono"></i>
+            <h2 class="numero">100</h2>
+          </div>
+          <h2 class="descripcion prueba">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            quo, deserunt, quis doloribus consequuntur, incidunt ex fugit
+            adipisci cum distinctio commodi vero dolores suscipit saepe unde!
+            Quisquam repudiandae fugiat voluptate.
+          </h2>
+          <h3 class="prueba extra">
+            Fecha aqui | autor | <span class="extra">categoria</span>
+          </h3>
+        </div>
+      </article>
+      <!-- <article class="articulo2">
         <img src="http://lorempixel.com/400/200" alt="imagen2" />
         <div class="articulo2__contenido">
-          <h1>articulo 2</h1>
+          <h1 class="prueba articulo1__contenido__titulo">articulo 2</h1>
           <div class="estadisticas">
             <i class="far fa-eye"></i>
             <h2>239</h2>
@@ -60,16 +116,15 @@
             <h2>5</h2>
             <i class="far fa-heart"></i>
             <h2>100</h2>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis quo, deserunt, quis doloribus consequuntur, incidunt ex
-              fugit adipisci cum distinctio commodi vero dolores suscipit saepe
-              unde! Quisquam repudiandae fugiat voluptate.
-            </h2>
-            <h3>Fecha aqui | autor | <span>categoria</span></h3>
           </div>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            quo, deserunt, quis doloribus consequuntur, incidunt ex fugit
+            adipisci cum distinctio commodi vero dolores suscipit saepe unde!
+            Quisquam repudiandae fugiat voluptate.
+          </h2>
+          <h3>Fecha aqui | autor | <span>categoria</span></h3>
         </div>
-        <hr />
       </article>
       <article class="articulo3">
         <img src="http://lorempixel.com/400/200" alt="imagen3" />
@@ -92,25 +147,106 @@
           </div>
         </div>
         <hr />
-      </article>
-      <button>Leer más</button>
+      </article> -->
+      <button class="cta">Leer más</button>
+      <hr />
       <article class="contenedor2">
-        <input type="date" />
         <div class="populares">
-          <h2>Tendencias</h2>
-          <h3>Fecha</h3>
-          <h4>descripcion</h4>
-          <h3>Fecha</h3>
-          <h4>descripcion</h4>
-          <h3>Fecha</h3>
-          <h4>descripcion</h4>
+          <h2 class="contenedor2__titulo">Tendencias</h2>
+          <h3 class="contenedor2__fecha">Fecha</h3>
+          <h4 class="contenedor2__descripciones">descripcion</h4>
+          <h3 class="contenedor2__fecha">Fecha</h3>
+          <h4 class="contenedor2__descripciones">descripcion</h4>
+          <h3 class="contenedor2__fecha">Fecha</h3>
+          <h4 class="contenedor2__descripciones">descripcion</h4>
         </div>
+        <div class="container">
+          <div class="calendar-container">
+            <header class="calendar__header">
+              <div class="day">5</div>
+              <div class="month">Junio</div>
+            </header>
+
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <td>Lun</td>
+                  <td>Mar</td>
+                  <td>Mie</td>
+                  <td>Jue</td>
+                  <td>Vie</td>
+                  <td>Sab</td>
+                  <td>Dom</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td class="current-day">5</td>
+
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+
+                <tr>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                </tr>
+
+                <tr>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                </tr>
+
+                <tr>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                </tr>
+
+                <tr>
+                  <td>29</td>
+                  <td>30</td>
+                  <td class="next-month">1</td>
+                  <td class="next-month">2</td>
+                  <td class="next-month">3</td>
+                  <td class="next-month">4</td>
+                  <td class="next-month">5</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="ring-left"></div>
+            <div class="ring-right"></div>
+          </div>
+          <!-- end calendar-container -->
+        </div>
+        <!-- end container -->
       </article>
     </div>
+
     <footer>
-      <section class="footer_principal">
+      <section class="footer__principal">
         <section class="copyright">
-          <h3>
+          <h3 class="section__copyright">
             &copy;2020. El diario universitario. Todos los derechos reservados
           </h3>
         </section>
@@ -122,9 +258,9 @@
           </ul>
         </section>
         <section class="social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-youtube"></i>
+          <i class="fab fa-facebook-f redessociales"></i>
+          <i class="fab fa-twitter redessociales"></i>
+          <i class="fab fa-youtube redessociales"></i>
         </section>
       </section>
     </footer>
