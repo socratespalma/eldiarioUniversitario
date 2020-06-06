@@ -307,14 +307,14 @@ footer {
   /* color: var(--mintcream); */
 }
 
-.footer__principal {
+.footer-principal {
   /* background-color: firebrick; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1vh 5vw;
   height: 9vh;
-
+  padding-right: 5.1rem;
   /* position: fixed; */
 }
 
@@ -347,4 +347,15 @@ footer i {
   font-size: 1.5rem;
   align-items: center;
   transition: all 0.3s ease 0s;
+  margin-left: 1rem;
+  background-color: var(--prusianblue);
+}
+
+.i-facebook{
+  background-color: var(--prusianblue);
+  padding: 1rem 1.3rem;
+}
+
+.i-twitter, .i-youtube{
+  padding: 1rem;
 }
