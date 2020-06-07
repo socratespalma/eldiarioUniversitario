@@ -18,7 +18,6 @@
 body {
   background-color: var(--mintcream);
   display: flex;
-  /* flex-direction: column; */
   flex-flow: column;
   padding-top: 9vh;
 }
@@ -36,7 +35,7 @@ body {
 .header__principal {
   background-color: var(--prusianblue);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1vh 5vw;
   height: 9vh;
@@ -46,9 +45,29 @@ body {
   z-index: 10;
 }
 
+.header__principal div {
+  display: flex;
+}
+
+.header__principal input[type="text"] {
+  margin-right: auto;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.header__principal button {
+  background-color: var(--powterblue);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
 .nav__links {
   list-style: none;
   padding: 0 1vw;
+  margin-left: 9vw;
 }
 
 .nav__links li,
@@ -59,7 +78,6 @@ body {
 
 .nav__links li a,
 .links li a {
-  transition: all 0.3s ease 0s;
   color: var(--mintcream);
   text-decoration: none;
   font-size: 1.2rem;
@@ -67,33 +85,28 @@ body {
 
 .nav__links li a:hover,
 .links li a:hover,
-.contenedor2__descripciones:hover,
-.social i:hover {
+.contenedor2__descripciones:hover {
   color: var(--powterblue);
+  transition: all 0.3s ease 0s;
 }
 
-.nav__links input[type="text"] {
-  margin-left: 2vw;
-  border: 1px solid #ccc;
+.header__principal button:hover {
+  background-color: #ddd;
+  transition: all 0.3s ease 0s;
 }
 
 .contenedor__principal {
   display: flex;
   justify-content: space-around;
   flex-flow: column;
-  /* background-color: seagreen; */
 }
 
-.articulo1,
-.articulo2,
-.articulo3 {
-  /* background-color: blue; */
+.articulo1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 8vh 5vw;
   position: relative;
-  /* background-color: chocolate; */
 }
 
 .articulo1__contenido__titulo {
@@ -104,12 +117,12 @@ body {
 img {
   height: 30vh;
   width: 25vw;
-  /* border-radius: 50%; */
+  box-shadow: 10px 10px 15px #ccc;
+  cursor: pointer;
 }
 
 .prueba {
   padding-top: 2vh;
-  /* font-size: 0.5rem; */
 }
 
 .icono {
@@ -124,7 +137,6 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* font-size: 0.8rem; */
 }
 
 .estadisticas i,
@@ -135,6 +147,7 @@ img {
 
 span {
   color: var(--glaucous);
+  cursor: pointer;
 }
 
 .descripcion {
@@ -149,35 +162,31 @@ span {
   background-color: var(--glaucous);
   color: var(--mintcream);
   text-transform: capitalize;
+  font-weight: 700;
   margin: 0 auto;
 }
 
 .cta:hover {
   cursor: pointer;
   background-color: var(--powterblue);
+  color: var(--raisinblack);
   transition: all 0.3s ease 0s;
 }
 
 .contenedor2 {
-  /* background-color: brown; */
   display: flex;
   justify-content: space-evenly;
   margin: 8vh 5vw;
 }
 
 .populares {
-  /* background-color: chartreuse; */
   height: 30vh;
   width: 30vw;
   text-align: center;
-  /* padding:; */
 }
 
 .contenedor2__titulo {
   font-size: 1.8rem;
-  /* padding-bottom: 3vh; */
-  /* border-bottom: 1px solid var(--raisinblack); */
-  /* width: 100%; */
 }
 
 .contenedor2__fecha {
@@ -189,7 +198,10 @@ span {
 .contenedor2__descripciones {
   font-size: 1.2rem;
   cursor: pointer;
+  text-align: justify;
 }
+
+/* Empieza el css del calendario */
 
 table {
   border-collapse: collapse;
@@ -289,6 +301,8 @@ td {
   width: 0.5vw;
 }
 
+/* Termina el css del calendario */
+
 hr {
   border: 0;
   height: 1px;
@@ -303,23 +317,19 @@ hr {
 
 footer {
   background-color: var(--raisinblack);
-
-  /* color: var(--mintcream); */
 }
 
 .footer-principal {
-  /* background-color: firebrick; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1vh 5vw;
   height: 9vh;
   padding-right: 5.1rem;
-  /* position: fixed; */
 }
 
 .section__copyright {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 footer .section__copyright,
@@ -331,31 +341,31 @@ footer i {
 .social {
   width: 10vw;
   height: 5vh;
-  /* background-color: forestgreen; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .social i {
-  /* width: 44px;
-  height: 44px; */
-  /* background-color: pink;
-  color: white; */
   cursor: pointer;
   border-radius: 50%;
-  font-size: 1.5rem;
-  align-items: center;
+  font-size: 1.2rem;
   transition: all 0.3s ease 0s;
   margin-left: 1rem;
   background-color: var(--prusianblue);
 }
 
-.i-facebook{
-  background-color: var(--prusianblue);
+.i-facebook {
   padding: 1rem 1.3rem;
 }
 
-.i-twitter, .i-youtube{
+.i-twitter,
+.i-youtube {
   padding: 1rem;
+}
+
+.social i:hover {
+  background-color: var(--powterblue);
+  color: var(--raisinblack);
+  transition: all 0.3s ease 0s;
 }
